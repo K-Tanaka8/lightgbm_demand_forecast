@@ -1,4 +1,3 @@
-# lightgbm_demand_forecast
 # LightGBMによる需要予測サンプル
 
 このノートブックは、**Python + LightGBM** を使って小売商品の需要予測を行うサンプルです。  
