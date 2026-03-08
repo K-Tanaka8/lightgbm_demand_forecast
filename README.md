@@ -1,10 +1,34 @@
 # lightgbm_demand_forecast
-LightGBMによる需要予測サンプル
+# LightGBMによる需要予測サンプル
 
-LightGBMによる予測サンプル
+このノートブックは、**Python + LightGBM** を使って小売商品の需要予測を行うサンプルです。  
+Google Colabでそのまま実行可能で、実務で使える簡易予測パイプラインを示しています。
 
-このノートブックは、Python + LightGBMを使って小売商品の需要予測を行うサンプルです。 Google Colabでそのまま実行可能で、実務で使える簡易予測パイプラインを示しています。 特徴 • ダミーデータを生成して、日々の販売数を予測 • 特徴量 • 曜日・月・ラグ特徴量（1週間） • プロモーションや在庫情報 ※プロモーションや在庫はサンプル用にランダム生成しています • LightGBMモデルでの予測 • 予測精度評価（RMSE） •予測の長期化（実績 vs 予測） • 特徴量重要度の長期化実行環境 • Python 3.10+ • Google Colab 推奨 • ライブラリ: pandas、numpy、matplotlib、seaborn、lightgbm、scikit-learn、japanize-matplotlib 実行方法
+## 特徴
 
-Google Colabでlightgbm_demand_forecast.ipynbを開く
-上から順にセルを実行する
-実績と予測のグラフ、特徴量重要度のグラフが表示される注意点 • 本ノートブックはサンプル用途のため、簡略化しています • 実務で使用する場合は欠品処理や季節性補正、在庫ロジック、クロスバリデーション評価などを拡張してください • このリポジトリのコードはポートフォリオ用です。
+- ダミーデータを生成して日次の売上を予測  
+- 月や曜日などのカレンダー特徴量を使用  
+- LightGBMモデルでの予測  
+- 予測精度評価（RMSE）  
+- 予測結果の可視化（実績 vs 予測）  
+- 特徴量重要度の可視化  
+
+※一部の特徴量は公開用に簡略化しています。
+
+## 実行環境
+
+- Python 3.10+  
+- Google Colab 推奨  
+- ライブラリ: pandas, numpy, matplotlib, seaborn, lightgbm, scikit-learn, japanize-matplotlib  
+
+## 実行方法
+
+1. Google Colabで `lightgbm_demand_forecast_sample.ipynb` を開く  
+2. 上から順にセルを実行する  
+3. 予測結果のグラフと特徴量重要度のグラフが表示される  
+
+## 注意点
+
+- 本ノートブックは**サンプル用途**のため、簡略化しています  
+- 実務で使用する場合は欠品処理、在庫ロジック、特徴量チューニングなどを拡張してください  
+- 本リポジトリは **No License** で公開しています（閲覧・学習用）
